@@ -1,0 +1,412 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{margin:0;
+  padding:0;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;    
+}
+
+/* INÍCIO HOME*/
+.navegacao{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color:black;    
+}
+
+.logo{
+    width:120px;
+    height:80px;
+}
+
+.link{
+    margin-left: 50px;
+    color:orange;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.link:hover{
+    color:white;
+    transition: .8s;}
+
+.bem-vindo1{
+    position:absolute;
+    font-size:40px;
+    text-transform: uppercase;
+    margin-top: 130px;
+    font-weight: 900;
+    margin-left: 110px;   
+    color: white;
+}
+
+.bem-vindo2{
+    position:absolute;
+    font-size:90px;
+    text-transform: uppercase;
+    margin-top: 160px;
+    font-weight:900;
+    margin-left: 110px;
+    color:white;
+}
+
+.bem-vindo3{
+    position:absolute;
+    font-size:140px;
+    text-transform: uppercase;
+    margin-top: 225px;
+    font-weight: bolder;
+    margin-left: 102px;
+    color:white;    
+}
+
+.img{  
+    width:100%;
+    height:560px;
+}
+
+.hero{
+    width:100%;
+    height:560px;
+}
+/* FIM HOME*/
+
+/* INÍCIO VALORES*/
+.valores{      
+    height: 700px; 
+    color:white;
+    background-image: url(./imagens/valor.jpg);
+}
+
+.valores h1{
+    margin-left: 65px;
+    font-size: 45px;
+    color:orange;
+    padding: 30px 0 10px 0;    
+}
+
+.content-valor{
+    margin-top: 10px;
+    margin-left: 65px;
+    background-color: rgba(255,255,255,.2);
+    padding:30px;
+    width:32%;
+    border-radius: 12px;
+    height:300px;
+    font-size: 16px;     
+}
+
+.content-valor li{
+list-style:none;
+}
+
+.valor-icon{
+    height:25px;
+    width:25px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+/* FIM VALORES*/
+
+/* INÍCIO SOBRE*/
+.banner{
+    width:100%;
+    height:100%;
+    overflow: hidden;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner video{
+    position:relative;
+    top:0;
+    left:0;
+    object-fit: cover;
+    width:100%;
+    height:220px;
+}
+
+.content-banner{
+    position:absolute;
+    z-index:1;
+    color:white;
+    display:flex;
+    gap:15px;
+}
+
+.item{
+    font-size: 20px;
+}
+
+.item2{
+    font-size:50px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color:orange;
+}
+
+.item3{
+    font-size: 20px;
+    margin-top: 45px;
+}
+
+.span-orange{
+    font-size:20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color:orange;
+    }
+/* FIM SOBRE*/
+
+/* INICIO FOTOS*/
+.fotos{
+    height: 700px;
+    background-color: black;
+}
+
+.fotos h2{
+    font-size: 35px;
+    padding: 30px 0 30px 0; 
+    color:orange;
+    text-align: center;
+}
+
+.slider-center{
+margin:0 auto;
+width:900px;
+height:500px;
+overflow: hidden;
+}
+
+.slides{
+    width:400%;
+    height:500px;
+    display:flex;
+}
+
+.slides input{
+    display:none;
+}
+
+.slide{
+    width:25%;
+    position:relative;
+    transition: 2s;
+}
+
+.slide img{
+    width:900px;
+}
+
+.imagem6{
+    width:900px;
+    height:500px;
+}
+
+.manual-navigation{
+    position:absolute;
+    width:900px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn{
+    border:2px solid #fff;
+    padding:5px;
+    border-radius: 10px;
+    cursor:pointer;
+    transition:1s;
+}
+
+.manual-btn:not(:last-child){
+    margin-right:10px;
+}
+
+.manual-btn:hover{
+    background-color: white;
+}
+
+#radio1:checked ~ .first{
+    margin-left:0;
+}
+
+#radio2:checked ~ .first{
+    margin-left:-25%;
+}
+
+#radio3:checked ~ .first{
+    margin-left:-50%;
+}
+
+#radio4:checked ~ .first{
+    margin-left:-75%;
+}
+
+#radio5:checked ~ .first{
+    margin-left:-100%;
+}
+
+#radio6:checked ~ .first{
+    margin-left:-125%;
+}
+
+.navigation-auto div{
+    border:2px solid #20a6ff;
+    padding: 5px;
+    border-radius: 10px;
+    cursor:pointer;
+    transition: 1s;
+}
+
+.navigation-auto{
+    position: absolute;
+    width:900px;
+    margin-top: 460px;
+    display: flex;
+    justify-content: center;
+}
+
+.navigation-auto div:not(:last-child){
+    margin-right:10px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background-color: #fff;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn2{
+    background-color: #fff;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn3{
+    background-color: #fff;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn4{
+    background-color: #fff;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn5{
+    background-color: #fff;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn6{
+    background-color: #fff;
+}
+/* FIM FOTOS*/
+
+
+/* INICIO CONTATO*/
+.contato{
+    width:100%;
+    height: 300px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color:white;     
+}
+
+.logo-contato{
+    width:290px;
+    height:200px;
+}
+
+.content-rede{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:100%;    
+}
+
+.icones{
+    width:25px;
+    height:25px;
+    display: flex;
+    margin-inline-start:5px;    
+}
+
+.content-contato{
+    display: flex;
+    align-items: center;    
+}
+
+.icones2{
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+}
+
+.icone_contato{
+    width:30px;
+    height:30px;
+}
+
+.icone_email{
+    width:25px;
+    height:25px;
+}
+
+.endereco{
+    list-style: none;
+    display:flex;
+    flex-direction: column;    
+    font-size: 16px;
+    gap:20px;
+    margin-left: 10px;
+}
+
+.menu2{
+    display:flex;
+    flex-direction: column;
+    gap:15px;
+    font-size: 14px;
+}
+/* FIM CONTATO*/
+
+/* INICIO FOOTER*/
+.footer{
+    background-color: rgb(24, 23, 23);
+    color:white;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    height:80px;
+    width:100%;
+}
+/* FIM FOOTER*/
+
+
+
+/*RESPONSIVIDADE*/
+@media(max-width:1250px){
+    header{flex-direction: column;} 
+    header .menu{width:50%; margin-bottom: 15px;
+    display: none;}
+    .bem-vindo1{
+        font-size:50px;
+        margin-left: 80px;  
+    }
+    
+    .bem-vindo2{
+        font-size:75px;
+        margin-left: 80px;
+    }
+    
+    .bem-vindo3{
+        font-size:100px;
+        margin-left: 72px;
+    }
+
+.valores{
+    display:none;
+}
+
+}
+/*FIM RESPONSIVIDADE*/
