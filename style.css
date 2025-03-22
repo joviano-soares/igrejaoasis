@@ -381,32 +381,3 @@ overflow: hidden;
     width:100%;
 }
 /* FIM FOOTER*/
-
-
-
-/*RESPONSIVIDADE*/
-@media(max-width:1250px){
-    header{flex-direction: column;} 
-    header .menu{width:50%; margin-bottom: 15px;
-    display: none;}
-    .bem-vindo1{
-        font-size:50px;
-        margin-left: 80px;  
-    }
-    
-    .bem-vindo2{
-        font-size:75px;
-        margin-left: 80px;
-    }
-    
-    .bem-vindo3{
-        font-size:100px;
-        margin-left: 72px;
-    }
-
-.valores{
-    display:none;
-}
-
-}
-/*FIM RESPONSIVIDADE*/
